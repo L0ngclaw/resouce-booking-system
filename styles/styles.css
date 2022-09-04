@@ -1,0 +1,315 @@
+/*blue - #0072bb
+light blue - #e2f4ff*/
+
+body{
+	background-color:#e2f4ff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ul.menu {
+	margin:0;
+	padding:0;
+	background-color:#0072bb;
+	overflow:hidden;
+	list-style-type: none;
+}
+
+li.menu {
+	float:right;
+  display: inline-flex;
+  margin: auto;
+  margin-top: 10px;
+
+}
+
+li a {
+	display:block;
+	color:white;
+	text-align:center;
+	padding:14px 16px;
+	text-decoration:none;
+}
+
+
+li a:hover{
+	background-color: #94d5ff;
+}
+
+
+.title {
+  font-family: Raleway;
+}
+
+.logo {
+  float: left;
+  margin-left: 15px;
+  color:white;
+}
+.dropbtn {
+  background-color: #0072bb !important;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: -1.8px;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+#dropdown {
+  position: relative;
+  display: inline-block;
+  z-index:100;
+}
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd}
+
+.show {display:block;}
+/*end of dropdown*/
+
+.bodyImage {
+  background-image: url("images/computer-lab.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+/*Resource List*/
+.cardList {
+  margin: auto;
+  width:90%;
+  display:flex;
+  margin-top:-50px;
+}
+
+.card:hover {
+  background-color:#0072bb;
+  color:white;
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+}
+
+.card {
+  width:15%;
+  background-color: white;
+  margin:auto;
+  border:2px solid black;
+  height:100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Raleway;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.card h2{
+  color:black !important
+}
+
+.card:hover h2{
+  color:white !important
+}
+
+/*footer*/
+footer {
+  display: flex;
+  text-align: center;
+  margin-top: 100px;
+  background: #0072bb;
+  color: #F7FFF7;
+}
+
+.contact-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.content-wrap {
+  /* background-color:green; */
+  margin: auto;
+}
+
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+
+.register-form{
+  background-color: white;
+  width: 500px;
+  padding: 10px;
+  margin-top: 80x;
+}
+
+.login{
+  background-color: white;
+  width: 400px;
+}
+
+.submitBtn {
+  background-color: #2980B9;
+}
+
+/*Savindhya*/
+
+.bg1 {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/35/Swimming_pool%2C_University_of_Peradeniya%2C_Sri_Lanka.JPG);
+}
+.bg2 {
+  background-image: url(https://www.livelifeaberdeenshire.org.uk/media/2108/westhill-pool.jpg);
+}
+
+.bg3 {
+  background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2014/02/25/275252/5ae28887d16dd1744f7e1031899920fb-700.jpg);
+}
+
+.bg4 {
+  background-image: url(https://www.livelifeaberdeenshire.org.uk/media/6920/banner-web-turriff.jpg);
+}
+
+.bg5 {
+  background-image: url(https://www.grampianonline.co.uk/_media/img/5KTMB89XYGDCOUJGJQ4X.jpg);
+}
+
+
+
+.bg25 {
+  background-image: url(https://i.pinimg.com/originals/46/d4/97/46d4976e8e04dce1c1d6a247a3f5368e.jpg);
+}
+.bg22 {
+  background-image: url(https://i.pinimg.com/originals/44/03/6f/44036fde0f1d8e2ee343d15ee1341896.jpg);
+}
+
+.bg23 {
+  background-image: url(https://i.pinimg.com/originals/7e/bb/36/7ebb36db7566e07987a04123377a596c.jpg);
+}
+
+.bg24 {
+  background-image: url(https://i.pinimg.com/originals/d5/39/1c/d5391c8d3163f51b671a6e7b6d2569fd.jpg);
+}
+
+.bg21 {
+  background-image: url(https://i.pinimg.com/originals/3f/43/89/3f4389adf5168918faf63fea1b9d4401.jpg);
+}
+
+
+/*two buttons*/
+.button{
+background: #0072bb;
+transition: all 0.5s ease-in-out;
+}
+.button:hover{
+box-shadow: inset 0px -200px 0px 0px #3041e0;
+}
+
+section {
+  height:auto;
+  width:auto;
+  margin-right: 20px;
+  border:5px solid darkblue;
+  padding:10px;
+  background-color: #70c1f0;
+  color: darkblue;
+}
+
+.imageindoor{
+  column-count: 2;
+  column-gap: 50px;
+  padding: 0px;
+}
+
+p {
+  line-height: 1.6; 
+  font-family: Helvetica;
+  text-align: justify;
+  margin: 0;
+  font-size: 14px;
+}
+
+.imgindoor {
+  float: left;
+  width: 250px;
+  shape-margin:20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/*booking page*/
+.formcontainer {
+  width: 80%;
+  margin: 0 auto;
+}
+.book {
+    box-shadow: 0px 5px 13px -3px rgba(0,0,0,0.75);
+    display: flex;
+    flex-wrap: wrap;
+}
+.bookingdescription , .form{
+    width: 40%;
+    padding: 5%;
+}
+.bookingdescription h1 {
+    text-transform: uppercase;
+    color: var(--font-light);
+    font-weight: 400;
+    margin-top: 0;
+}
+.bookingdescription h1 strong{
+  font-weight: 700;
+  color: #000;
+}
+.bookingdescription p {
+    color: var(--font-light);
+    font-size: 14px;
+    line-height: 22px;
+}
+.quote p {
+    font-style: italic;
+    padding: 2%;
+    border-left: 4px solid var(--primary-color);
+}
+.bookingdescription ul {
+    padding-left: 16px;
+    list-style: circle;
+}
+.bookingdescription ul li{
+    margin: 10px 0;
+}
+
+
+button.subt, button.rst{
+  padding: 2% 3%;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 0;
+}
+button.subt {
+    margin-right: 3%;
+    background: #fff;
+}
+button.rst {
+    background: #000;
+    color: #fff;
+}
+/*end of Savindhya*/

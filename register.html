@@ -1,0 +1,100 @@
+<html>
+<head>
+	<title>College Resource Booking</title>
+	<link rel = "stylesheet" type="text/css" href ="styles/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+<script src="js/myScript.js"></script>
+</head>
+<body>
+<center>
+
+
+<nav class ="layout">
+	<ul class = "menu">	
+		<li class="logo">
+			<h1>Highgate College</h1>
+		</li>
+		<li class = "menu"><a href = "login.html">Login</a></li>
+		<li class = "menu"><a href = "#">Register</a></li>
+		<li class = "menu"><a href = "">Feedback</a></li>
+		<li class = "menu"><a href = "">Contact us</a></li>
+		<li class = "menu" id = "dropdown"><button onclick="myButton()" class= "dropbtn">Resources</button>
+		<div id="myDropdown" class="dropdown-content">
+			<a href="">Science Labs</a>
+			<a href="">Computer Labs</a>
+			<a href="Auditorium.html">Auditorium</a>
+			<a href="">Halls</a>
+			<a href="SwimmingPool.html">Swimming Pool</a>
+		</div>
+	</li>
+		<li class = "menu"><a href = "index.php">Home</a></li>
+	</ul>	
+</nav>
+
+<div class="register-form">
+<h2>Register</h2>
+<form action="submitRegistration.php" method="POST" onsubmit="return checkPassword()">
+	
+    <label> Choose your user type:</label>
+	<input type= "radio" name ="user" value="Student" checked><label for="student"> Student</label>
+    <input type= "radio" name ="user" value="Teacher"><label for="teacher"> Teacher</label>
+	<input type= "radio" name ="user" value="Guest"><label for="guest">Guest</label> <br><br>
+
+	<label> First Name: </label>
+	<input type="text" name="fname" placeholder="First Name" required><br><br>
+
+    <label> Last Name:</label>
+	<input type="text" name="lname" placeholder="Last Name"><br><br>
+
+	<label>Create a username:</label>
+	<input type="text" name="uname" placeholder="User Name" required><br><br>
+    
+    <label>Gender:</label>
+  <input type= "radio" name ="gender" value="Male" checked>Male
+  <input type="radio" name="gender" value="Female">Female<br><br>
+
+  <label>Date of Birth:</label> 
+  <input type="date" name="birthDate" required><br><br>
+
+  <label>Mobile Number:</label>
+  <input type="phone" name="mobile" placeholder="0771234567" pattern="[0-9]{10}" required><br><br>
+
+  <label>E-mail:</label>
+  <input type="email" name="email" placeholder="someone@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9._]+\.[a-z]{2,3}" required><br><br>
+
+  <label>Address:</label><br> 
+  <textarea name="userAddress" rows="8" cols="50" required> </textarea><br><br>
+
+  <label>Password:</label><br>
+  <input type="password" name = "pswd" id="pwd" pattern="(?=.+\d)(?=.[a-z])(?=.+[A-Z]{5-10})" required><br><br> 
+  
+  <label>Re-enter Password:</label><br>
+  <input type="password" id="confirmpw" required><br><br>
+
+  
+  <input type="checkbox" id="checkbox" onclick= "enableButton()">Accept privacy policy and terms<br><br>
+   
+<input type="submit" name="btnSubmit" id="submitBtn" value="Submit">
+</div>
+  </form>
+
+
+
+<footer>
+	<div class="content-wrap">
+	  <h2>Let's Keep in Touch!</h2>
+	  <ul class="contact-list">
+		<li><a href="">email : contact@hgc.lk</a></li>
+		<li><a href="" target="_blank">Highgate College Website</a></li>
+		<li><a href="" target="_blank">Facebook</a></li>
+		<li><a href="" target="_blank">LinkedIn</a></li>
+	  </ul>
+	</div>
+  </footer>
+
+
+
+</body>
+</html>

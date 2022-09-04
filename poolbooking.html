@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>College Resource Booking</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="js/myScript.js"></script>
+</head>
+
+<body>
+    <nav class="layout">
+        <ul class="menu">
+            <li class="logo">
+                <h1>Highgate College</h1>
+            </li>
+            <li class="menu"><a href="">Login</a></li>
+            <li class="menu"><a href="">Register</a></li>
+            <li class="menu"><a href="">Feedback</a></li>
+            <li class="menu"><a href="">Contact us</a></li>
+            <li class="menu" id="dropdown"><a href="">Resources</a></li>
+            <div class="dropdown-content">
+                <a href="">Science Labs</a>
+                <a href="">Computer Labs</a>
+                <a href="">Auditorium</a>
+                <a href="">Halls</a>
+                <a href="">Swimming Pool</a>
+            </div>
+            <li class="menu"><a href="#">Home</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="formcontainer">
+        <div class="book">
+          <div class="bookingdescription">
+            <h1><strong>Reserve</strong> <br>the swimming pool</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="quote">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </p>
+              <br><br>
+            </div>
+            <h3>
+              Swimming pool is open:
+            </h3>
+            <ul>
+              <li>Monday to Friday 6.00am - 6.00pm</li>
+              <li>Saturday and Sunday 9.00am - 4.00pm</li>
+            </ul>
+          </div>
+
+          <div class="form" style="margin-top: 100px;">
+            <form method="POST" action="submitAddItems.php">
+              Select the date:
+              <input type="date" name="Date">
+              <br><br>
+              
+              Select the Swimming pool:
+              <select id="pool" name="SwimmingPool">
+                <option value="">Select a pool</option>
+                <option value="Outdoor pool 1">Outdoor pool 1</option>
+                <option value="Outdoor pool 2">Outdoor pool 2</option>
+                <option value="Indoor pool 1">Indoor pool 1</option>
+                <option value="Indoor pool 2">Indoor pool 2</option>
+              </select>
+              <br><br><br>
+              
+              Mobile Number:
+              <input type="text" name="Mnumber" pattern="[0-9]{10}" title="Enter 10 digits" required>
+              <br><br>
+              
+              Email:
+              <input type="email" name="email" required>
+              <br><br>
+            
+              Enter the NO of people:
+              <input type="number" name="NoOfPeople"><br>
+              <br><br><br>
+              <input type="checkbox" id="chkTerms" onchange="AcceptTerms()"> Accept privacy policy and terms.<br><br><br>
+    
+              <button class="subt">Submit</button>
+              <button class="rst">Reset</button>
+              </form>
+          </div>
+        </div>
+      </div>
+
+
+
+    
+
+
+
+
+
+    <footer >
+        <div class="content-wrap" >
+            <h2>Let's Keep in Touch!</h2>
+            <ul class="contact-list">
+                <li><a href="">email : contact@hgc.lk</a></li>
+                <li><a href="" target="_blank">Highgate College Website</a></li>
+                <li><a href="" target="_blank">Facebook</a></li>
+                <li><a href="" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>  
